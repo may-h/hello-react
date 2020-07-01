@@ -31,7 +31,9 @@ const IterationSample = () => {
     setInputText("");
   };
 
-  const nameList = names.map((name) => (
+  const nameList = names.map((
+    name //인자값으로 id를 넘겨준다.
+  ) => (
     <li key={name.id} onDoubleClick={() => onRemove(name.id)}>
       {name.text}
     </li>
